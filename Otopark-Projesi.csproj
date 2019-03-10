@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91ABEDE0-9942-4FF2-84D6-12288579046B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otopark_Projesi</RootNamespace>
+    <AssemblyName>Otopark-Projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge">
+      <HintPath>..\..\..\Proje\Otopark projesi gerekli döküman\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>..\..\..\Proje\Otopark projesi gerekli döküman\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\Proje\Otopark projesi gerekli döküman\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\Proje\Otopark projesi gerekli döküman\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Vision">
+      <HintPath>..\..\..\Proje\Otopark projesi gerekli döküman\AForge.NET Framework-2.2.5-(libs only)\Release\AForge.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anamenu.Designer.cs">
+      <DependentUpon>Anamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="araccıkıs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="araccıkıs.Designer.cs">
+      <DependentUpon>araccıkıs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baslangıc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Baslangıc.Designer.cs">
+      <DependentUpon>Baslangıc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ekle.Designer.cs">
+      <DependentUpon>ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="geçmiş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="geçmiş.Designer.cs">
+      <DependentUpon>geçmiş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kamera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kamera.Designer.cs">
+      <DependentUpon>kamera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="konum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="konum.Designer.cs">
+      <DependentUpon>konum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcıgirişi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcıgirişi.Designer.cs">
+      <DependentUpon>Kullanıcıgirişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="otoparkverileriDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>otoparkverileriDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="üyelik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="üyelik.Designer.cs">
+      <DependentUpon>üyelik.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anamenu.resx">
+      <DependentUpon>Anamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="araccıkıs.resx">
+      <DependentUpon>araccıkıs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baslangıc.resx">
+      <DependentUpon>Baslangıc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ekle.resx">
+      <DependentUpon>ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="geçmiş.resx">
+      <DependentUpon>geçmiş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kamera.resx">
+      <DependentUpon>kamera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="konum.resx">
+      <DependentUpon>konum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcıgirişi.resx">
+      <DependentUpon>Kullanıcıgirişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="üyelik.resx">
+      <DependentUpon>üyelik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="otoparkverileriDataSet.xsc">
+      <DependentUpon>otoparkverileriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="otoparkverileriDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>otoparkverileriDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="otoparkverileriDataSet.xss">
+      <DependentUpon>otoparkverileriDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Car_images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="otoparkverileri.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
